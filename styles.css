@@ -2872,12 +2872,15 @@ body {
 .chart-context {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 8px 16px;
   background: rgba(239,68,68,0.05);
   border: 1px solid rgba(239,68,68,0.15);
   border-radius: 12px;
   padding: 14px 18px;
   margin-bottom: 16px;
+  width: 100%;
+  box-sizing: border-box;
 }
 [data-theme="light"] .chart-context {
   background: rgba(239,68,68,0.04);
@@ -2895,6 +2898,7 @@ body {
 }
 .chart-ctx-body {
   flex: 1;
+  min-width: 0;
 }
 .chart-ctx-verdict {
   font-family: 'Syne', sans-serif;
@@ -2974,6 +2978,11 @@ body {
 }
 @media (max-width: 860px) {
   .ck-grid { grid-template-columns: repeat(2, 1fr); }
+  .chart-section { padding: 18px 14px; }
+  .chart-header { gap: 10px; margin-bottom: 16px; }
+  .chart-legend { flex-wrap: wrap; gap: 8px; }
+  .chart-context { flex-direction: column; gap: 6px; }
+  .chart-ctx-period { white-space: normal; }
 }
 @media (max-width: 500px) {
   .ck-grid { grid-template-columns: 1fr; }
