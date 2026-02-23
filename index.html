@@ -193,6 +193,12 @@
 
         <!-- HERO BANNER -->
         <div class="exp-hero fade-in">
+          <button class="back-btn" onclick="goTo('inicio')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 12H5M12 5l-7 7 7 7"/>
+            </svg>
+            Regresar
+          </button>
           <div class="exp-hero-badge"><svg viewBox="0 0 24 24">
               <path
                 d="M17 8C8 10 5.9 16.17 3.82 19.82L5.71 21l1-1.9A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 2-8 2s-7.26.55-7 7c.24 5.92 7 9 7 9s-2.18-3.15-2-6c.4-5.5 11-8 11-8C22 3 22 3 17 8z" />
@@ -344,54 +350,22 @@
                 Management"</em> (1992) estableció los fundamentos para integrar la sostenibilidad en la cadena de
               suministro. Sostuvo que la eficiencia logística y la responsabilidad ambiental son fuerzas
               complementarias, no opuestas.</p>
-          </div>
-          <div class="exp-timeline fade-in fade-in-d2">
-            <h3>Línea del tiempo</h3>
-            <div class="tl-item">
-              <div class="tl-dot">92</div>
-              <div class="tl-content">
-                <h4>1992 — Primeros conceptos</h4>
-                <p>Martin Christopher publica su libro fundacional. El término "green logistics" empieza a circular en
-                  círculos académicos europeos.</p>
-              </div>
-            </div>
-            <div class="tl-item">
-              <div class="tl-dot">97</div>
-              <div class="tl-content">
-                <h4>1997 — Protocolo de Kyoto</h4>
-                <p>Los países industrializados asumen compromisos de reducción de emisiones, presionando al sector
-                  logístico a adaptarse.</p>
-              </div>
-            </div>
-            <div class="tl-item">
-              <div class="tl-dot">00</div>
-              <div class="tl-content">
-                <h4>2000s — Auge corporativo</h4>
-                <p>Empresas como Walmart y DHL lanzan programas formales de logística verde. La presión de consumidores
-                  impulsa el cambio.</p>
-              </div>
-            </div>
-            <div class="tl-item">
-              <div class="tl-dot">15</div>
-              <div class="tl-content">
-                <h4>2015 — Acuerdo de París</h4>
-                <p>El transporte y la logística son identificados como sectores prioritarios de descarbonización a nivel
-                  global.</p>
-              </div>
-            </div>
-            <div class="tl-item">
-              <div class="tl-dot">24</div>
-              <div class="tl-content">
-                <h4>Hoy — Obligación estratégica</h4>
-                <p>La logística verde deja de ser diferenciador competitivo y se convierte en requisito mínimo para
-                  operar en mercados globales.</p>
-              </div>
-            </div>
+            <a href="https://es.wikipedia.org/wiki/Log%C3%ADstica_verde" target="_blank" rel="noopener" class="tl-source-link" style="margin-top:10px;display:inline-flex;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>&nbsp;Fuente: Wikipedia — Logística verde</a>
           </div>
         </div>
 
   </div>
     </div>
+
+    <!-- ══ CAT GUIDE ══ -->
+    <div class="cat-guide" id="catGuide">
+      <div class="cat-bubble" id="catBubble">
+        <div class="cat-bubble-arrow"></div>
+        <p id="catMsg">¡Hola! Soy Kenji 🐱 Tu guía en esta página. ¡Haz clic en mí para explorar!</p>
+      </div>
+      <img src="cat.png" alt="Kenji el gato guía" class="cat-img" id="catImg" onclick="catNextTip()" />
+    </div>
+
   </div>
 
   <!-- ════════════════════════════════════
@@ -561,6 +535,13 @@
               <canvas id="impactChart"></canvas>
             </div>
             <div id="chartNote" class="chart-note"></div>
+            <div class="chart-sources">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+              <strong>Fuentes:</strong>
+              Banco Mundial — <em>CO₂ emissions (kt) – Panama</em> ·
+              Ministerio de Ambiente de Panamá · Secretaría Nacional de Energía de Panamá ·
+              Las proyecciones 2028–2030 son elaboración propia con fines educativos basadas en tendencias de estas fuentes.
+            </div>
             <div class="chart-controls">
               <div class="chart-pills">
                 <button class="cpill active" onclick="setChartView('co2', event)">Emisiones CO₂</button>
@@ -572,6 +553,88 @@
                 <button class="ctoggle ctoggle--green active" id="toggleGood" onclick="toggleLine('good')">Con logística verde</button>
               </div>
             </div>
+          </div>
+
+          <!-- ══ CAMBIO CLIMÁTICO Y LOGÍSTICA ══ -->
+          <div class="cc-section fade-in">
+            <div class="sec-lbl" style="margin-bottom:12px">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px">
+                <path d="M12 2a10 10 0 010 20M2 12h20M12 2C6.48 2 2 6.48 2 12M12 2c5.52 0 10 4.48 10 10"/>
+              </svg>Cambio climático y logística
+            </div>
+            <h3 class="cc-title">¿Cómo afecta el cambio climático a la logística?</h3>
+            <p class="cc-intro">El cambio climático y la logística se afectan mutuamente: el sector es responsable de gran parte de las emisiones, y a su vez los fenómenos extremos golpean directamente las cadenas de suministro globales.</p>
+
+            <div class="cc-grid">
+
+              <div class="cc-card fade-in fade-in-d1">
+                <div class="cc-card-icon" style="background:linear-gradient(135deg,#7a1a1a,#c23a2a)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <div class="cc-card-body">
+                  <h4>Infraestructura destruida</h4>
+                  <p>Huracanes, inundaciones e incendios inutilizan carreteras, puertos y centros de distribución, rompiendo el flujo de la cadena de suministro. Entre 2014 y 2023 se registraron cerca de 4.000 eventos climáticos extremos que afectaron a 1.600 millones de personas.</p>
+                  <a href="https://blog.eiffmx.com/cambio-climatico-impacto-en-las-cadenas-de-suministro" target="_blank" rel="noopener" class="cc-source">Fuente: EIFF México →</a>
+                </div>
+              </div>
+
+              <div class="cc-card fade-in fade-in-d2">
+                <div class="cc-card-icon" style="background:linear-gradient(135deg,#1a4a7a,#2a72c2)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                </div>
+                <div class="cc-card-body">
+                  <h4>Canal de Panamá y sequías</h4>
+                  <p>La escasez de agua por sequía puede reducir hasta un 40% la capacidad diaria de tránsito del Canal de Panamá, encareciendo rutas alternativas y prolongando plazos de entrega hasta 72 horas en América Latina.</p>
+                  <a href="https://thelogisticsworld.com/actualidad-logistica/cambio-climatico-y-logistica-como-prepararse-ante-interrupciones-en-la-cadena-de-suministro/" target="_blank" rel="noopener" class="cc-source">Fuente: The Logistics World →</a>
+                </div>
+              </div>
+
+              <div class="cc-card fade-in fade-in-d3">
+                <div class="cc-card-icon" style="background:linear-gradient(135deg,#5a4a1a,#c2922a)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                </div>
+                <div class="cc-card-body">
+                  <h4>Costos que se disparan</h4>
+                  <p>Las disrupciones climáticas cuestan al comercio global al menos 81.000 millones de dólares anuales. Las pérdidas totales en la última década superan los 2 billones de dólares según la Cámara de Comercio Internacional.</p>
+                  <a href="https://thelogisticsworld.com/actualidad-logistica/cambio-climatico-y-logistica-como-prepararse-ante-interrupciones-en-la-cadena-de-suministro/" target="_blank" rel="noopener" class="cc-source">Fuente: The Logistics World →</a>
+                </div>
+              </div>
+
+              <div class="cc-card fade-in fade-in-d1">
+                <div class="cc-card-icon" style="background:linear-gradient(135deg,#1a5a3a,#2ab870)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </div>
+                <div class="cc-card-body">
+                  <h4>Energía y electricidad en riesgo</h4>
+                  <p>Las sequías reducen la generación hidroeléctrica, causando cortes en centros de distribución, puertos automatizados y cadenas de frío. En 2024 se desperdiciaron 53.000 GWh de energía renovable por infraestructura afectada por el clima extremo.</p>
+                  <a href="https://thelogisticsworld.com/planeacion-estrategica/impacto-logistico-clima-extremo-panorama-america-latina-we/" target="_blank" rel="noopener" class="cc-source">Fuente: The Logistics World →</a>
+                </div>
+              </div>
+
+              <div class="cc-card fade-in fade-in-d2">
+                <div class="cc-card-icon" style="background:linear-gradient(135deg,#3a1a6b,#7a2ab8)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                </div>
+                <div class="cc-card-body">
+                  <h4>Rutas marítimas alteradas</h4>
+                  <p>El aumento del nivel del mar y los huracanes están modificando las rutas marítimas globales. Los puertos en zonas bajas enfrentan inundaciones que obligan a concentrar el tráfico en ventanas climáticas más seguras y cortas.</p>
+                  <a href="https://www.datadec.es/blog/influencia-cambio-climatico-cadena-suministro" target="_blank" rel="noopener" class="cc-source">Fuente: Datadec →</a>
+                </div>
+              </div>
+
+              <div class="cc-card fade-in fade-in-d3">
+                <div class="cc-card-icon" style="background:linear-gradient(135deg,#1a5a5a,#2ab8b8)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <div class="cc-card-body">
+                  <h4>Escasez de insumos y alimentos</h4>
+                  <p>Las sequías reducen superficies de cultivo y generan conflictos por agua y suelo fértil, provocando escasez de materias primas, aumento de precios y cambios bruscos en rutas de distribución de alimentos y componentes electrónicos.</p>
+                  <a href="https://www.safelinkmexico.com/los-preocupantes-efectos-del-cambio-climatico-en-la-cadena-de-suministro/" target="_blank" rel="noopener" class="cc-source">Fuente: Safelink México →</a>
+                </div>
+              </div>
+
+            </div>
+
           </div>
 
         </div>
@@ -748,6 +811,40 @@
                 <div class="sc-tag" style="background:rgba(107,26,26,.15);color:#c23a2a">Cadena</div>
                 <h3>Proveedores con certificación verde</h3>
                 <p>Exigir estándares ISO 14001 o equivalentes a toda la cadena de suministro garantiza que la sostenibilidad no se pierda en ningún eslabón del proceso.</p>
+              </div>
+            </div>
+
+            <!-- Soluciones ante el cambio climático -->
+            <div class="sc fade-in fade-in-d3">
+              <div class="sc-ico" style="background:linear-gradient(135deg,#1a3a6b,#2a62c2)"><svg viewBox="0 0 24 24">
+                  <path d="M1 6l11 7 11-7M1 6v12l11 7 11-7V6"/>
+                </svg></div>
+              <div class="sc-body">
+                <div class="sc-tag" style="background:rgba(26,58,107,.15);color:#2a62c2">Resiliencia</div>
+                <h3>Rutas alternativas y hubs intermodales</h3>
+                <p>Diversificar los corredores logísticos y usar hubs terrestres intermodales permite redirigir cargas cuando puertos o carreteras clave quedan bloqueados por fenómenos climáticos extremos.</p>
+              </div>
+            </div>
+
+            <div class="sc fade-in fade-in-d1">
+              <div class="sc-ico" style="background:linear-gradient(135deg,#1a6b3a,#2ab860)"><svg viewBox="0 0 24 24">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                </svg></div>
+              <div class="sc-body">
+                <div class="sc-tag" style="background:rgba(26,107,58,.15);color:#2ab860">Predicción</div>
+                <h3>Big Data e IA climática predictiva</h3>
+                <p>Los modelos de escenarios climáticos (RCP) y los gemelos digitales de la red logística permiten simular disrupciones, anticipar cierres de rutas y activar planes de contingencia antes de que ocurran.</p>
+              </div>
+            </div>
+
+            <div class="sc fade-in fade-in-d2">
+              <div class="sc-ico" style="background:linear-gradient(135deg,#5a3a1a,#c27a2a)"><svg viewBox="0 0 24 24">
+                  <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+                </svg></div>
+              <div class="sc-body">
+                <div class="sc-tag" style="background:rgba(90,58,26,.15);color:#c27a2a">Infraestructura</div>
+                <h3>Infraestructura verde resiliente</h3>
+                <p>Construir carreteras, puentes y sistemas de drenaje diseñados para soportar fenómenos extremos, junto con reservorios estratégicos como el Proyecto Río Indio para el Canal de Panamá, garantiza continuidad operativa.</p>
               </div>
             </div>
           </div>
@@ -1217,42 +1314,145 @@
                 <a href="https://youtu.be/5wh-8dqGT3I" class="rlink" target="_blank">Ver video <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
               </div>
             </div>
+            <div class="vid-card fade-in fade-in-d1">
+              <a href="https://youtu.be/DDV6P9J0jPQ" target="_blank" class="vid-thumb vid-thumb-link">
+                <span class="vid-badge">YouTube</span>
+                <img src="https://img.youtube.com/vi/DDV6P9J0jPQ/hqdefault.jpg" alt="Video 7 thumbnail">
+                <div class="vid-play"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3" fill="white"/></svg></div>
+              </a>
+              <div class="vid-body">
+                <h3>Logística Verde — Explicación completa</h3>
+                <p>Definición, ventajas y ejemplos prácticos de logística sostenible para empresas.</p>
+                <a href="https://youtu.be/DDV6P9J0jPQ" class="rlink" target="_blank">Ver video <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
+              </div>
+            </div>
+            <div class="vid-card fade-in fade-in-d2">
+              <a href="https://youtu.be/5LpsvcqaId4" target="_blank" class="vid-thumb vid-thumb-link">
+                <span class="vid-badge">YouTube</span>
+                <img src="https://img.youtube.com/vi/5LpsvcqaId4/hqdefault.jpg" alt="Video 8 thumbnail">
+                <div class="vid-play"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3" fill="white"/></svg></div>
+              </a>
+              <div class="vid-body">
+                <h3>Cadena de suministro verde</h3>
+                <p>Cómo integrar sostenibilidad en cada eslabón de la cadena logística moderna.</p>
+                <a href="https://youtu.be/5LpsvcqaId4" class="rlink" target="_blank">Ver video <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
+              </div>
+            </div>
+            <div class="vid-card fade-in fade-in-d3">
+              <a href="https://youtu.be/HuyhWi52WvU" target="_blank" class="vid-thumb vid-thumb-link">
+                <span class="vid-badge">YouTube</span>
+                <img src="https://img.youtube.com/vi/HuyhWi52WvU/hqdefault.jpg" alt="Video 9 thumbnail">
+                <div class="vid-play"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3" fill="white"/></svg></div>
+              </a>
+              <div class="vid-body">
+                <h3>Green Logistics — Retos y soluciones</h3>
+                <p>Análisis de los principales desafíos y estrategias de la logística verde.</p>
+                <a href="https://youtu.be/HuyhWi52WvU" class="rlink" target="_blank">Ver video <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
+              </div>
+            </div>
+            <div class="vid-card fade-in fade-in-d1">
+              <a href="https://www.tiktok.com/@jonathan.quiroga340/video/7488291813661609221" target="_blank" class="vid-thumb vid-thumb-link vid-tiktok">
+                <span class="vid-badge vid-badge--tt">TikTok</span>
+                <div class="vid-play"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3" fill="white"/></svg></div>
+              </a>
+              <div class="vid-body">
+                <h3>Logística verde — @jonathan.quiroga340</h3>
+                <p>Conceptos clave de logística sostenible y transporte ecológico explicados en TikTok.</p>
+                <a href="https://www.tiktok.com/@jonathan.quiroga340/video/7488291813661609221" class="rlink" target="_blank">Ver TikTok <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
+              </div>
+            </div>
+            <div class="vid-card fade-in fade-in-d2">
+              <a href="https://www.tiktok.com/@asconsultoriaintegral/video/7372589309754494213" target="_blank" class="vid-thumb vid-thumb-link vid-tiktok">
+                <span class="vid-badge vid-badge--tt">TikTok</span>
+                <div class="vid-play"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3" fill="white"/></svg></div>
+              </a>
+              <div class="vid-body">
+                <h3>Consultoría logística verde — @asconsultoriaintegral</h3>
+                <p>Prácticas de logística sostenible para empresas latinoamericanas.</p>
+                <a href="https://www.tiktok.com/@asconsultoriaintegral/video/7372589309754494213" class="rlink" target="_blank">Ver TikTok <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
+              </div>
+            </div>
+            <div class="vid-card fade-in fade-in-d3">
+              <a href="https://www.tiktok.com/@javierp0210/video/7333290921364032774" target="_blank" class="vid-thumb vid-thumb-link vid-tiktok">
+                <span class="vid-badge vid-badge--tt">TikTok</span>
+                <div class="vid-play"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3" fill="white"/></svg></div>
+              </a>
+              <div class="vid-body">
+                <h3>Impacto ambiental del transporte — @javierp0210</h3>
+                <p>Cómo el transporte contamina y qué puede hacer la logística verde para reducirlo.</p>
+                <a href="https://www.tiktok.com/@javierp0210/video/7333290921364032774" class="rlink" target="_blank">Ver TikTok <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
+              </div>
+            </div>
           </div>
 
           <!-- PÁGINAS WEB -->
           <div class="rec-section webs-grid" id="tab-webs">
             <div class="web-card fade-in fade-in-d1">
               <div class="web-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M2 12h20M12 2a15.3 15.3 0 014 10" />
+                  <path d="M3 3h18v18H3V3zM3 9h18M9 21V9" />
                 </svg></div>
-              <h3>COEL-Logística verde</h3>
-              <p>¿Qué es la logística verde? ¿Cómo surge la logística verde?</p>
-              <a href="https://www.coelpanama.org/post/-que-es-la-logistica-verde-" class="rlink" target="_blank">Visitar sitio <svg viewBox="0 0 24 24" fill="none"
+              <h3>Manual SbN — MiAmbiente Panamá</h3>
+              <p>Manual oficial de Soluciones basadas en la Naturaleza publicado por el Ministerio de Ambiente de Panamá. Referencia clave para políticas ambientales y logística sostenible en el país.</p>
+              <a href="https://transparencia-climatica.miambiente.gob.pa/wp-content/uploads/2026/01/Manual-SbN-Panamá.pdf" class="rlink" target="_blank">Visitar sitio <svg viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg></a>
             </div>
             <div class="web-card fade-in fade-in-d2">
               <div class="web-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
-                  <polyline points="14 2 14 8 20 8" />
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
                 </svg></div>
-              <h3>Quadminds - Logística verde</h3>
-              <p>¿Qué es la logística verde y por qué implementarla?</p>
-              <a href="https://www.quadminds.com/blog/que-es-la-logistica-verde-y-por-que-implementarla/" class="rlink" target="_blank">Visitar sitio <svg viewBox="0 0 24 24" fill="none"
+              <h3>Ocean Import PTY — Logística verde en Panamá</h3>
+              <p>Análisis sobre cómo las empresas logísticas panameñas están adoptando soluciones verdes: rutas optimizadas, flotas eléctricas y prácticas de distribución sostenible.</p>
+              <a href="https://oceanimportpty.com/empresas-logistica-en-panama-adoptan-soluciones-verdes/logistica/" class="rlink" target="_blank">Visitar sitio <svg viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg></a>
             </div>
             <div class="web-card fade-in fade-in-d3">
               <div class="web-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="3" y="3" width="18" height="18" rx="2" />
-                  <path d="M3 9h18M9 21V9" />
+                  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
                 </svg></div>
-              <h3>OBS BUSINESS SCHOOL </h3>
-              <p>Pepe Baena Naranjo: profesor y Director de programa - Logística verde: Qué es y qué beneficios tiene para la empresa</p>
-              <a href="https://www.obsbusiness.school/blog/logistica-verde-que-es-y-que-beneficios-tiene-para-la-empre" class="rlink" target="_blank">Visitar sitio <svg viewBox="0 0 24 24" fill="none"
+              <h3>IEP — ¿Qué es la logística verde?</h3>
+              <p>Artículo completo con definición, ejemplos prácticos y casos reales de empresas que implementan logística verde. Ideal para comprender el concepto con profundidad.</p>
+              <a href="https://iep.edu.es/logistica-verde-que-es-ejemplos/" class="rlink" target="_blank">Visitar sitio <svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg></a>
+            </div>
+            <div class="web-card fade-in fade-in-d1">
+              <div class="web-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14H11v-5h2v5zm0-7H11V7h2v2z"/>
+                </svg></div>
+              <h3>The Logistics World — Empresas exitosas</h3>
+              <p>10 empresas que realizan logística verde con éxito: estrategias, resultados y lecciones aprendidas de referentes mundiales del sector.</p>
+              <a href="https://thelogisticsworld.com/planeacion-estrategica/10-empresas-exitosas-que-realizan-logistica-verde/" class="rlink" target="_blank">Visitar sitio <svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg></a>
+            </div>
+            <div class="web-card fade-in fade-in-d2">
+              <div class="web-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 8v4l3 3"/>
+                </svg></div>
+              <h3>Banco Mundial — Emisiones CO₂ Panamá</h3>
+              <p>Datos abiertos del Banco Mundial sobre emisiones de CO₂ en Panamá. Fuente oficial para analizar tendencias históricas y proyecciones del sector logístico.</p>
+              <a href="https://data.worldbank.org/indicator/EN.ATM.CO2E.KT?locations=PA" class="rlink" target="_blank">Visitar sitio <svg viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg></a>
+            </div>
+            <div class="web-card fade-in fade-in-d3">
+              <div class="web-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg></div>
+              <h3>MiAmbiente — Portal oficial de Panamá</h3>
+              <p>Portal oficial del Ministerio de Ambiente de Panamá. Accede a normativas, reportes de sostenibilidad, política ambiental y datos climáticos nacionales.</p>
+              <a href="https://miambiente.gob.pa" class="rlink" target="_blank">Visitar sitio <svg viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg></a>
@@ -1479,6 +1679,89 @@
             </div>
           </div>
         </div>
+
+        <!-- ══ BIBLIOGRAFÍA ══ -->
+        <div class="bib-section fade-in">
+          <div class="bib-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+              <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+            </svg>
+            Bibliografía y fuentes consultadas
+          </div>
+          <p class="bib-intro">Las fuentes consultadas incluyen fuentes académicas, videos educativos, páginas institucionales y documentos en línea proporcionados por Perplexity.</p>
+
+          <div class="bib-group">
+            <div class="bib-group-title">Logística verde — Definición y conceptos clave</div>
+            <ol class="bib-list">
+              <li>SAP Concur Team. (2022, mayo 9). <em>¿Qué es la logística verde? Claves para entenderla.</em> SAP Concur México. <a href="https://www.concur.com.mx/blog/article/logistica-verde-mx" target="_blank" rel="noopener">https://www.concur.com.mx/blog/article/logistica-verde-mx</a></li>
+              <li>CEUPE Argentina. <em>Logística verde.</em> CEUPE Blog. <a href="https://ceupe.com.ar/blog/logistica-verde/" target="_blank" rel="noopener">https://ceupe.com.ar/blog/logistica-verde/</a></li>
+              <li>OBS Business School. <em>Logística verde: qué es y qué beneficios tiene para la empresa.</em> OBS Blog. <a href="https://www.obsbusiness.school/blog/logistica-verde-que-es-y-que-beneficios-tiene-para-la-empre" target="_blank" rel="noopener">https://www.obsbusiness.school/blog/logistica-verde-que-es-y-que-beneficios-tiene-para-la-empre</a></li>
+              <li>Quadminds. <em>¿Qué es la logística verde y por qué implementarla?</em> Quadminds Blog. <a href="https://www.quadminds.com/blog/que-es-la-logistica-verde-y-por-que-implementarla/" target="_blank" rel="noopener">https://www.quadminds.com/blog/que-es-la-logistica-verde-y-por-que-implementarla/</a></li>
+              <li>Consejo Empresarial Logístico de Panamá (COEL). <em>¿Qué es la logística verde?</em> COEL Panamá. <a href="https://www.coelpanama.org/post/-que-es-la-logistica-verde-" target="_blank" rel="noopener">https://www.coelpanama.org/post/-que-es-la-logistica-verde-</a></li>
+              <li>The Logistics World. (2022, noviembre 29). <em>Logística verde: 10 empresas que la realizan con éxito.</em> <a href="https://thelogisticsworld.com/planeacion-estrategica/10-empresas-exitosas-que-realizan-logistica-verde/" target="_blank" rel="noopener">https://thelogisticsworld.com/planeacion-estrategica/10-empresas-exitosas-que-realizan-logistica-verde/</a></li>
+            </ol>
+          </div>
+
+          <div class="bib-group">
+            <div class="bib-group-title">Cambio climático e impacto en la logística</div>
+            <ol class="bib-list">
+              <li>The Logistics World. (2025, abril 21). <em>Cambio climático y logística: cómo prepararse ante interrupciones en la cadena de suministro.</em> <a href="https://thelogisticsworld.com/actualidad-logistica/cambio-climatico-y-logistica-como-prepararse-ante-interrupciones-en-la-cadena-de-suministro/" target="_blank" rel="noopener">https://thelogisticsworld.com/actualidad-logistica/cambio-climatico-y-logistica-como-prepararse-ante-interrupciones-en-la-cadena-de-suministro/</a></li>
+              <li>The Logistics World. (2025, abril 16). <em>Impacto del cambio climático en la logística y el suministro global.</em> <a href="https://thelogisticsworld.com/planeacion-estrategica/impacto-cambio-climatico-logistica-suministro-global-preparacion-empresas/" target="_blank" rel="noopener">https://thelogisticsworld.com/planeacion-estrategica/impacto-cambio-climatico-logistica-suministro-global-preparacion-empresas/</a></li>
+              <li>The Logistics World. (2025, noviembre 18). <em>El impacto logístico del clima extremo: vulnerabilidad energética en América Latina.</em> <a href="https://thelogisticsworld.com/planeacion-estrategica/impacto-logistico-clima-extremo-panorama-america-latina-we/" target="_blank" rel="noopener">https://thelogisticsworld.com/planeacion-estrategica/impacto-logistico-clima-extremo-panorama-america-latina-we/</a></li>
+              <li>SCM Logística. (2024, marzo 21). <em>Cambio climático: así afecta a la cadena de suministro.</em> <a href="https://www.scmlogistica.es/el-cambio-climatico-en-la-cadena-de-suministro/" target="_blank" rel="noopener">https://www.scmlogistica.es/el-cambio-climatico-en-la-cadena-de-suministro/</a></li>
+              <li>Safelink México. (2024, marzo 14). <em>Los preocupantes efectos del cambio climático en la cadena de suministro.</em> <a href="https://www.safelinkmexico.com/los-preocupantes-efectos-del-cambio-climatico-en-la-cadena-de-suministro/" target="_blank" rel="noopener">https://www.safelinkmexico.com/los-preocupantes-efectos-del-cambio-climatico-en-la-cadena-de-suministro/</a></li>
+              <li>Datadec. (2025, marzo 11). <em>Influencia del cambio climático en la cadena de suministro.</em> <a href="https://www.datadec.es/blog/influencia-cambio-climatico-cadena-suministro" target="_blank" rel="noopener">https://www.datadec.es/blog/influencia-cambio-climatico-cadena-suministro</a></li>
+              <li>EIFF México. <em>Cambio climático: impacto en las cadenas de suministro.</em> <a href="https://blog.eiffmx.com/cambio-climatico-impacto-en-las-cadenas-de-suministro" target="_blank" rel="noopener">https://blog.eiffmx.com/cambio-climatico-impacto-en-las-cadenas-de-suministro</a></li>
+              <li>RM Forwarding. (2025, agosto 1). <em>El clima severo: efectos en la logística y cadenas de suministro.</em> <a href="http://rm-forwarding.com/2025/07/28/el-clima-severo-efectos-en-la-logistica-y-cadenas-de-suministro/" target="_blank" rel="noopener">http://rm-forwarding.com/2025/07/28/el-clima-severo-efectos-en-la-logistica-y-cadenas-de-suministro/</a></li>
+            </ol>
+          </div>
+
+          <div class="bib-group">
+            <div class="bib-group-title">Videos educativos — YouTube</div>
+            <ol class="bib-list">
+              <li>DHL.  <em>El Impacto de la Logística Verde en Tu Empresa: Estrategias y Beneficios</em> YouTube. <a href="https://youtu.be/Z_Io3KoBsxQ" target="_blank" rel="noopener">https://youtu.be/Z_Io3KoBsxQ</a></li>
+              <li>SEFOET Fortalecimiento Empresarial. <em>LOGÍSTICA VERDE</em> YouTube. <a href="https://youtu.be/UukRCp96pfI" target="_blank" rel="noopener">https://youtu.be/UukRCp96pfI</a></li>
+              <li>iFP. Innovación en Formación Profesional <em>Empresas que lideran el cambio verde</em>  YouTube. <a href="https://youtu.be/d1-nQWdWosI" target="_blank" rel="noopener">https://youtu.be/d1-nQWdWosI</a></li>
+              <li>Monica Margoth MAZO TOVAR  <em>Logística Verde — Estrategias y buenas prácticas</em>  YouTube. <a href="https://youtu.be/qBuOlqXXTzM" target="_blank" rel="noopener">https://youtu.be/qBuOlqXXTzM</a></li>
+              <li>Logistec TV <em>Sostenibilidad en la Logística</em>  YouTube. <a href="https://youtu.be/_eZRbZXGesU" target="_blank" rel="noopener">https://youtu.be/_eZRbZXGesU</a></li>
+              <li>Panamá Soluciones Logísticas Intl <em>Transporte Sostenible</em>  YouTube. <a href="https://youtu.be/5wh-8dqGT3I" target="_blank" rel="noopener">https://youtu.be/5wh-8dqGT3I</a></li>
+              <li>Campus Virtual Unicatólica <em>Logística Verde — Explicación completa</em> YouTube. <a href="https://youtu.be/DDV6P9J0jPQ" target="_blank" rel="noopener">https://youtu.be/DDV6P9J0jPQ</a></li>
+              <li>Ingenierías de la Industria y el Ambiente UCSP  <em>Cadena de suministro verde</em>  YouTube. <a href="https://youtu.be/5LpsvcqaId4" target="_blank" rel="noopener">https://youtu.be/5LpsvcqaId4</a></li>
+              <li>pascualbravovirtual  <em>Green Logistics — Retos y soluciones</em> YouTube. <a href="https://youtu.be/HuyhWi52WvU" target="_blank" rel="noopener">https://youtu.be/HuyhWi52WvU</a></li>
+            </ol>
+          </div>
+
+          <div class="bib-group">
+            <div class="bib-group-title">Videos educativos — TikTok</div>
+            <ol class="bib-list">
+              <li>Quiroga, J. (2025). <em>Logística verde: conceptos clave y transporte sostenible</em> [Video]. TikTok: @jonathan.quiroga340. <a href="https://www.tiktok.com/@jonathan.quiroga340/video/7488291813661609221" target="_blank" rel="noopener">https://www.tiktok.com/@jonathan.quiroga340/video/7488291813661609221</a></li>
+              <li>AS Consultoría Integral. (2024). <em>Logística verde para empresas latinoamericanas</em> [Video]. TikTok: @asconsultoriaintegral. <a href="https://www.tiktok.com/@asconsultoriaintegral/video/7372589309754494213" target="_blank" rel="noopener">https://www.tiktok.com/@asconsultoriaintegral/video/7372589309754494213</a></li>
+              <li>Javier P. (2024). <em>Impacto ambiental del transporte y logística verde</em> [Video]. TikTok: @javierp0210. <a href="https://www.tiktok.com/@javierp0210/video/7333290921364032774" target="_blank" rel="noopener">https://www.tiktok.com/@javierp0210/video/7333290921364032774</a></li>
+            </ol>
+          </div>
+
+          <div class="bib-group">
+            <div class="bib-group-title">Empresas — Reportes oficiales de sostenibilidad</div>
+            <ol class="bib-list">
+              <li>Amazon. (2024). <em>Amazon Sustainability — The Climate Pledge &amp; 2023 Sustainability Report.</em> About Amazon. <a href="https://sustainability.aboutamazon.com" target="_blank" rel="noopener">https://sustainability.aboutamazon.com</a></li>
+              <li>DHL Group. (2024). <em>GoGreen Plus — Sustainability Portal.</em> Deutsche Post DHL. <a href="https://www.dhl.com/global-en/home/about-us/sustainability.html" target="_blank" rel="noopener">https://www.dhl.com/global-en/home/about-us/sustainability.html</a></li>
+              <li>FedEx Corporation. (2024). <em>FedEx Sustainability — Carbon Neutral by 2040.</em> FedEx. <a href="https://www.fedex.com/en-us/sustainability.html" target="_blank" rel="noopener">https://www.fedex.com/en-us/sustainability.html</a></li>
+              <li>UPS. (2024). <em>2023 UPS Global Sustainability Report.</em> UPS Corporate Responsibility. <a href="https://about.ups.com/us/en/social-impact/environment.html" target="_blank" rel="noopener">https://about.ups.com/us/en/social-impact/environment.html</a></li>
+            </ol>
+          </div>
+
+          <div class="bib-group">
+            <div class="bib-group-title">Datos de referencia — Panamá y emisiones</div>
+            <ol class="bib-list">
+              <li>Banco Mundial. (2024). <em>CO₂ emissions (kt) — Panama.</em> World Bank Open Data. <a href="https://data.worldbank.org/indicator/EN.ATM.CO2E.KT?locations=PA" target="_blank" rel="noopener">https://data.worldbank.org/indicator/EN.ATM.CO2E.KT?locations=PA</a></li>
+              <li>Ministerio de Ambiente de Panamá (MiAmbiente). <em>Portal oficial de MiAmbiente.</em> <a href="https://miambiente.gob.pa" target="_blank" rel="noopener">https://miambiente.gob.pa</a></li>
+              <li>Secretaría Nacional de Energía de Panamá (SNE). <em>Portal oficial de la SNE.</em> <a href="https://www.energia.gob.pa" target="_blank" rel="noopener">https://www.energia.gob.pa</a></li>
+            </ol>
+          </div>
+
+          <p class="bib-note">* Los datos numéricos de las gráficas (sección Impacto) son proyecciones elaboradas con fines educativos, basadas en tendencias del Banco Mundial y MiAmbiente. No representan cifras oficiales certificadas. Los datos de las empresas provienen de sus portales de sostenibilidad oficiales.</p>
+        </div>
+
       </div>
     </div>
   </div>
@@ -1516,6 +1799,54 @@ function toggleErc(card) {
     tryNext();
   });
 })();
+
+// ── Cat Guide ──
+const catTips = [
+  "Hola, soy Kenji. Te gustaria una guia corta?",
+  "Al inicio encontraras una explicacion del tema para mayor claridad sobre que es la logistica verde. Oye, continua bajando.",
+  "Vas bien. Mas abajo puedes conocer los conceptos clave que todo estudiante de logistica debe manejar. Sigue bajando.",
+  "Ya casi. Para finalizar, te mostrare un poco del creador del concepto y su aporte al tema. Un poco mas abajo.",
+  "Explora tambien el Impacto, las Soluciones y aprende con los Recursos que te brindamos. Usa el menu de navegacion arriba para moverte entre secciones."
+];
+let catTipIdx = 0;
+let catBubbleTimeout = null;
+
+function catNextTip() {
+  catTipIdx = (catTipIdx + 1) % catTips.length;
+  const msg = document.getElementById('catMsg');
+  const bubble = document.getElementById('catBubble');
+  const img = document.getElementById('catImg');
+  if (msg) msg.textContent = catTips[catTipIdx];
+  if (bubble) {
+    bubble.classList.remove('cat-hide');
+    bubble.classList.add('cat-show');
+    // Wider bubble for longer 4th tip
+    bubble.style.maxWidth = catTipIdx === 4 ? '280px' : '240px';
+  }
+  if (img) img.classList.add('cat-bounce');
+  clearTimeout(catBubbleTimeout);
+  catBubbleTimeout = setTimeout(() => {
+    if (bubble) { bubble.classList.remove('cat-show'); bubble.classList.add('cat-hide'); }
+    if (img) img.classList.remove('cat-bounce');
+  }, 5000);
+}
+
+// Show initial bubble when explorar page opens
+const __origGoTo = goTo;
+goTo = function(pageId) {
+  __origGoTo(pageId);
+  if (pageId === 'explorar') {
+    catTipIdx = 0;
+    const msg = document.getElementById('catMsg');
+    const bubble = document.getElementById('catBubble');
+    if (msg) msg.textContent = catTips[0];
+    if (bubble) { bubble.classList.remove('cat-hide'); bubble.classList.add('cat-show'); }
+    clearTimeout(catBubbleTimeout);
+    catBubbleTimeout = setTimeout(() => {
+      if (bubble) { bubble.classList.remove('cat-show'); bubble.classList.add('cat-hide'); }
+    }, 5000);
+  }
+};
   </script>
 </body>
 
