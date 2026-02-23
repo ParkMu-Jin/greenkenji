@@ -1273,7 +1273,9 @@
               </div>
               <div class="ig-list">
                 <a class="ig-item" href="https://www.instagram.com/_.saxum/" target="_blank">
-                  <div class="ig-avatar">AR</div>
+                  <div class="ig-avatar" data-initials="AR" data-ig="_.saxum" data-photo="avatar-ar">
+                    <span class="ig-init">AR</span>
+                  </div>
                   <div class="ig-info">
                     <span class="ig-handle">@_.saxum</span>
                     <span class="ig-name">Aldhair Rodríguez</span>
@@ -1281,7 +1283,9 @@
                   <svg class="ig-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
                 <a class="ig-item" href="https://www.instagram.com/yo_sariita_/" target="_blank">
-                  <div class="ig-avatar">SG</div>
+                  <div class="ig-avatar" data-initials="SG" data-ig="yo_sariita_" data-photo="avatar-sg">
+                    <span class="ig-init">SG</span>
+                  </div>
                   <div class="ig-info">
                     <span class="ig-handle">@yo_sariita_</span>
                     <span class="ig-name">Sara Guerra</span>
@@ -1289,7 +1293,9 @@
                   <svg class="ig-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
                 <a class="ig-item" href="https://www.instagram.com/a.guerra_27/" target="_blank">
-                  <div class="ig-avatar">AG</div>
+                  <div class="ig-avatar" data-initials="AG" data-ig="a.guerra_27" data-photo="avatar-ag">
+                    <span class="ig-init">AG</span>
+                  </div>
                   <div class="ig-info">
                     <span class="ig-handle">@a.guerra_27</span>
                     <span class="ig-name">Angie Guerra</span>
@@ -1305,6 +1311,30 @@
   </div>
 
   <script src="script.js"></script>
+  <script>
+// ── Avatar photo loader ──
+(function loadAvatarPhotos() {
+  const avatars = document.querySelectorAll(".ig-avatar[data-photo]");
+  const exts = ["jpg", "jpeg", "png", "webp"];
+  avatars.forEach(function(av) {
+    const base = av.getAttribute("data-photo");
+    let tried = 0;
+    function tryNext() {
+      if (tried >= exts.length) return;
+      const src = base + "." + exts[tried++];
+      const img = new Image();
+      img.onload = function() {
+        img.className = "ig-photo";
+        av.appendChild(img);
+        av.classList.add("has-photo");
+      };
+      img.onerror = tryNext;
+      img.src = src;
+    }
+    tryNext();
+  });
+})();
+  </script>
 </body>
 
 </html>
