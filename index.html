@@ -261,7 +261,70 @@
         </div>
 
         <!-- CONCEPTOS CLAVE -->
-        
+          <!-- CONCEPTOS CLAVE -->
+          <h3 class="exp-section-title fade-in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" style="width:16px;height:16px;flex-shrink:0">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M9 9h6M9 12h6M9 15h4" />
+            </svg>Conceptos clave</h3>
+
+          <div class="ck-grid fade-in">
+
+            <div class="ck-card">
+              <div class="ck-card-head">
+                <span class="ck-num">01</span>
+                <svg class="ck-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg>
+              </div>
+              <h4>Huella de carbono logística</h4>
+              <p>Total de gases de efecto invernadero generados por transporte, almacenamiento y distribución. Se mide en <strong>tCO₂e</strong> y es la base de cualquier estrategia verde.</p>
+            </div>
+
+            <div class="ck-card">
+              <div class="ck-card-head">
+                <span class="ck-num">02</span>
+                <svg class="ck-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+              </div>
+              <h4>Cadena de suministro sostenible</h4>
+              <p>Red que integra criterios sociales y ambientales junto con los económicos, desde el proveedor hasta el consumidor final.</p>
+            </div>
+
+            <div class="ck-card">
+              <div class="ck-card-head">
+                <span class="ck-num">03</span>
+                <svg class="ck-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+              </div>
+              <h4>Logística inversa</h4>
+              <p>El flujo de productos de vuelta al origen: recuperar valor, reutilizar materiales y asegurar la correcta disposición de residuos.</p>
+            </div>
+
+            <div class="ck-card">
+              <div class="ck-card-head">
+                <span class="ck-num">04</span>
+                <svg class="ck-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+              </div>
+              <h4>Last Mile Verde</h4>
+              <p>La última etapa de entrega hecha sostenible: vehículos eléctricos, bicicletas de carga y puntos de recogida compartidos.</p>
+            </div>
+
+            <div class="ck-card">
+              <div class="ck-card-head">
+                <span class="ck-num">05</span>
+                <svg class="ck-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="10" width="18" height="11" rx="2"/><path d="M3 16h18M7 21V10M17 21V10M2 12L12 4l10 8"/></svg>
+              </div>
+              <h4>Almacén verde</h4>
+              <p>Centro de distribución diseñado para reducir su impacto: paneles solares, iluminación LED, reciclaje de agua y certificaciones LEED o BREEAM.</p>
+            </div>
+
+            <div class="ck-card">
+              <div class="ck-card-head">
+                <span class="ck-num">06</span>
+                <svg class="ck-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              </div>
+              <h4>Transporte multimodal sostenible</h4>
+              <p>Combinar tren, barco, avión y carretera eligiendo en cada tramo la opción que menos contamina según el tipo de carga.</p>
+            </div>
+
+          </div>
 
         <!-- ORIGEN / CREADOR / HISTORIA -->
         <h3 class="exp-section-title fade-in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -473,26 +536,41 @@
             </div>
           </div>
 
-          <!-- GRÁFICA INTERACTIVA -->
+          <!-- GRÁFICA PANAMÁ -->
           <div class="chart-section fade-in">
             <div class="chart-header">
               <div>
-                <div class="sec-lbl" style="margin-bottom:8px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>Proyección comparativa</div>
-                <h3 class="chart-title">¿Qué pasa si no actuamos?</h3>
-                <p class="chart-sub">Evolución proyectada de emisiones CO₂ logísticas (GtCO₂) con y sin adopción de logística verde · 2020–2050</p>
+                <div class="sec-lbl" style="margin-bottom:8px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>Panamá · Logística y medioambiente</div>
+                <h3 class="chart-title" id="chartTitle">¿Cuánto contamina el transporte en Panamá?</h3>
+                <p class="chart-sub" id="chartSub">La línea gris muestra lo que pasó de verdad. Desde 2026: qué pasa si no hacemos nada (rojo) vs. si adoptamos logística verde (verde).</p>
               </div>
-              <div class="chart-legend">
-                <span class="cleg cleg--red"><span></span>Sin cambios</span>
-                <span class="cleg cleg--green"><span></span>Con logística verde</span>
+              <div class="chart-legend" id="chartLegend">
+                <span class="cleg cleg--gray"><span></span>Histórico real</span>
+                <span class="cleg cleg--red"><span></span>Sin cambios (proyección)</span>
+                <span class="cleg cleg--green"><span></span>Logística verde (proyección)</span>
+              </div>
+            </div>
+            <div id="chartContext" class="chart-context">
+              <div class="chart-ctx-period" id="chartCtxPeriod"></div>
+              <div class="chart-ctx-body">
+                <div class="chart-ctx-verdict" id="chartCtxVerdict"></div>
+                <p class="chart-ctx-detail" id="chartCtxDetail"></p>
               </div>
             </div>
             <div class="chart-wrap">
               <canvas id="impactChart"></canvas>
             </div>
-            <div class="chart-pills">
-              <button class="cpill active" onclick="setChartView('co2')">Emisiones CO₂</button>
-              <button class="cpill" onclick="setChartView('temp')">Temperatura global</button>
-              <button class="cpill" onclick="setChartView('bio')">Pérdida biodiversidad</button>
+            <div id="chartNote" class="chart-note"></div>
+            <div class="chart-controls">
+              <div class="chart-pills">
+                <button class="cpill active" onclick="setChartView('co2', event)">Emisiones CO₂</button>
+                <button class="cpill" onclick="setChartView('bosques', event)">Cobertura boscosa</button>
+                <button class="cpill" onclick="setChartView('energia', event)">Mix energético</button>
+              </div>
+              <div class="chart-toggles">
+                <button class="ctoggle ctoggle--red active" id="toggleBad" onclick="toggleLine('bad')">Sin cambios</button>
+                <button class="ctoggle ctoggle--green active" id="toggleGood" onclick="toggleLine('good')">Con logística verde</button>
+              </div>
             </div>
           </div>
 
@@ -578,6 +656,7 @@
               su huella ambiental y construir operaciones más eficientes.</p>
           </div>
           <div class="sol-grid">
+            <!-- Tarjeta destacada full-width -->
             <div class="sc fade-in">
               <div class="sc-ico"><svg viewBox="0 0 24 24">
                   <path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z" />
@@ -587,8 +666,7 @@
               <div class="sc-body">
                 <div class="sc-tag">Transporte</div>
                 <h3>Flotas eléctricas e híbridas</h3>
-                <p>Reemplazar vehículos de combustión por flotas eléctricas o híbridas reduce las emisiones de CO₂ hasta
-                  un 70% en rutas urbanas y de distribución.</p>
+                <p>Reemplazar vehículos de combustión por flotas eléctricas o híbridas reduce las emisiones de CO₂ hasta un 70% en rutas urbanas y de distribución.</p>
               </div>
             </div>
             <div class="sc fade-in fade-in-d1">
@@ -598,43 +676,37 @@
               <div class="sc-body">
                 <div class="sc-tag" style="background:rgba(58,107,138,.15);color:#5a9bc2">Rutas</div>
                 <h3>Optimización de rutas con IA</h3>
-                <p>El uso de algoritmos de inteligencia artificial permite diseñar rutas más cortas y eficientes,
-                  ahorrando combustible y reduciendo tiempos de entrega.</p>
+                <p>El uso de algoritmos de inteligencia artificial permite diseñar rutas más cortas y eficientes, ahorrando combustible y reduciendo tiempos de entrega.</p>
               </div>
             </div>
             <div class="sc fade-in fade-in-d2">
               <div class="sc-ico" style="background:linear-gradient(135deg,#6b3a8a,#9b5ac2)"><svg viewBox="0 0 24 24">
-                  <path
-                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg></div>
               <div class="sc-body">
                 <div class="sc-tag" style="background:rgba(107,58,138,.15);color:#9b5ac2">Energía</div>
                 <h3>Energía solar en almacenes</h3>
-                <p>Instalar paneles solares en techos de bodegas y centros de distribución puede cubrir hasta el 60% del
-                  consumo eléctrico operativo.</p>
+                <p>Instalar paneles solares en techos de bodegas y centros de distribución puede cubrir hasta el 60% del consumo eléctrico operativo.</p>
               </div>
             </div>
             <div class="sc fade-in fade-in-d3">
               <div class="sc-ico" style="background:linear-gradient(135deg,#3a7a4a,#5ab86a)"><svg viewBox="0 0 24 24">
-                  <path d="M4 4h16v16H4z M9 9h6v6H9z" />
+                  <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-4 0v2M12 12v4"/>
                 </svg></div>
               <div class="sc-body">
                 <div class="sc-tag">Packaging</div>
                 <h3>Embalaje sostenible y reutilizable</h3>
-                <p>Adoptar materiales biodegradables o sistemas de embalaje retornable disminuye los residuos de la
-                  cadena de suministro hasta un 45%.</p>
+                <p>Adoptar materiales biodegradables o sistemas de embalaje retornable disminuye los residuos de la cadena de suministro hasta un 45%.</p>
               </div>
             </div>
             <div class="sc fade-in fade-in-d1">
               <div class="sc-ico" style="background:linear-gradient(135deg,#7a5a1a,#c2922a)"><svg viewBox="0 0 24 24">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M12 8v4l3 3" />
+                  <polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 014-4h14M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 01-4 4H3"/>
                 </svg></div>
               <div class="sc-body">
-                <div class="sc-tag" style="background:rgba(122,90,26,.15);color:#c2922a">Planificación</div>
+                <div class="sc-tag" style="background:rgba(122,90,26,.15);color:#c2922a">Circular</div>
                 <h3>Logística inversa y economía circular</h3>
-                <p>Diseñar flujos de devolución y reutilización de productos cierra el ciclo logístico y reduce el
-                  volumen de residuos al mínimo posible.</p>
+                <p>Diseñar flujos de devolución y reutilización de productos cierra el ciclo logístico y reduce el volumen de residuos al mínimo posible.</p>
               </div>
             </div>
             <div class="sc fade-in fade-in-d2">
@@ -644,156 +716,224 @@
               <div class="sc-body">
                 <div class="sc-tag" style="background:rgba(26,90,122,.15);color:#2a92c2">Datos</div>
                 <h3>Medición de huella de carbono</h3>
-                <p>Implementar herramientas de monitoreo en tiempo real permite identificar ineficiencias y establecer
-                  metas de reducción concretas y verificables.</p>
+                <p>Implementar herramientas de monitoreo en tiempo real permite identificar ineficiencias y establecer metas de reducción concretas y verificables.</p>
+              </div>
+            </div>
+            <!-- 3 nuevas soluciones -->
+            <div class="sc fade-in fade-in-d3">
+              <div class="sc-ico" style="background:linear-gradient(135deg,#1a6b5a,#2ab896)"><svg viewBox="0 0 24 24">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+                </svg></div>
+              <div class="sc-body">
+                <div class="sc-tag" style="background:rgba(26,107,90,.15);color:#2ab896">Almacenes</div>
+                <h3>Centros de distribución cero residuos</h3>
+                <p>Bodegas diseñadas bajo principios LEED con iluminación LED, recuperación de agua y cero envíos a vertederos, reduciendo el impacto operativo hasta un 80%.</p>
+              </div>
+            </div>
+            <div class="sc fade-in fade-in-d1">
+              <div class="sc-ico" style="background:linear-gradient(135deg,#5a1a6b,#9b2ab8)"><svg viewBox="0 0 24 24">
+                  <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+                </svg></div>
+              <div class="sc-body">
+                <div class="sc-tag" style="background:rgba(90,26,107,.15);color:#9b2ab8">IoT</div>
+                <h3>Sensores IoT y trazabilidad en tiempo real</h3>
+                <p>Dispositivos conectados en cada eslabón de la cadena permiten detectar desperdicios de energía, temperatura y humedad, optimizando recursos automáticamente.</p>
+              </div>
+            </div>
+            <div class="sc fade-in fade-in-d2">
+              <div class="sc-ico" style="background:linear-gradient(135deg,#6b1a1a,#c23a2a)"><svg viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg></div>
+              <div class="sc-body">
+                <div class="sc-tag" style="background:rgba(107,26,26,.15);color:#c23a2a">Cadena</div>
+                <h3>Proveedores con certificación verde</h3>
+                <p>Exigir estándares ISO 14001 o equivalentes a toda la cadena de suministro garantiza que la sostenibilidad no se pierda en ningún eslabón del proceso.</p>
               </div>
             </div>
           </div>
 
-          <!-- Empresas que ya aplicaron estas soluciones -->
+          <!-- ══ CASOS REALES ══ -->
           <div class="empresas-section fade-in">
-            <h3 class="empresas-title">Empresas que ya lo aplican</h3>
-            <div class="empresas-grid">
-              <div class="emp-card fade-in fade-in-d1">
-                <div class="emp-logo" style="background:#fff"><img src="amazon.png" alt="Amazon"
-                    onerror="this.parentElement.style.background='linear-gradient(135deg,#ff9900,#ff6600)';this.outerHTML='<span class=emp-logo-txt>AMZ</span>'">
+            <h3 class="empresas-title">Casos reales</h3>
+
+            <div class="erc-grid">
+
+              <!-- AMAZON -->
+              <div class="erc-card" onclick="toggleErc(this)">
+                <div class="erc-front">
+                  <div class="erc-front-top">
+                    <div class="erc-logo" style="background:#fff"><img src="amazon.png" alt="Amazon"></div>
+                    <div class="erc-tag" style="--tc:#ff9900">Flota EV</div>
+                  </div>
+                  <h4 class="erc-name">Amazon</h4>
+                  <p class="erc-hook">La mayor apuesta de electrificación logística del mundo, construida desde cero.</p>
+                  <div class="erc-stats">
+                    <div class="erc-stat"><span class="erc-num">+10K</span><span class="erc-lbl">vehículos EV activos</span></div>
+                    <div class="erc-stat"><span class="erc-num">100%</span><span class="erc-lbl">energía renovable</span></div>
+                  </div>
+                  <div class="erc-cta">Ver soluciones <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div>
                 </div>
-                <h4>Amazon</h4>
-                <p>Flota de 100,000 vehículos eléctricos de reparto y objetivo de cero emisiones netas para 2040.</p>
-                <span class="emp-badge">Flota eléctrica</span>
-              </div>
-              <div class="emp-card fade-in fade-in-d2">
-                <div class="emp-logo" style="background:#fff"><img src="dhl.png" alt="DHL"
-                    onerror="this.parentElement.style.background='linear-gradient(135deg,#aa182c,#cc2233)';this.outerHTML='<span class=emp-logo-txt>DHL</span>'">
+                <div class="erc-body">
+                  <div class="erc-sol-list">
+                    <div class="erc-sol">
+                      <div class="erc-sol-num">01</div>
+                      <div>
+                        <strong>100,000 camionetas eléctricas Rivian</strong>
+                        <p>Ordenó la mayor flota de reparto eléctrico del mundo. Para 2023 ya circulaban más de 10,000 unidades entregando millones de paquetes sin emitir gases.</p>
+                      </div>
+                    </div>
+                    <div class="erc-sol">
+                      <div class="erc-sol-num">02</div>
+                      <div>
+                        <strong>Mayor comprador corporativo de energía renovable</strong>
+                        <p>Sus almacenes y centros de distribución en todo el mundo funcionan con solar y eólica. Logró el 100% de cobertura renovable en 2022.</p>
+                      </div>
+                    </div>
+                    <div class="erc-sol">
+                      <div class="erc-sol-num">03</div>
+                      <div>
+                        <strong>IA para rutas y embalaje</strong>
+                        <p>Algoritmos propios redujeron el volumen de embalaje un 36% y optimizaron la última milla. Resultado: más de 1.5 millones de toneladas de plástico eliminadas.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="erc-close">Cerrar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></div>
                 </div>
-                <h4>DHL</h4>
-                <p>Programa GoGreen con reducción del 50% de emisiones al 2025 y uso de biocombustibles.</p>
-                <span class="emp-badge">Energía limpia</span>
               </div>
-              <div class="emp-card fade-in fade-in-d3">
-                <div class="emp-logo" style="background:#fff"><img src="fedex.png" alt="FedEx"
-                    onerror="this.parentElement.style.background='linear-gradient(135deg,#003087,#0052cc)';this.outerHTML='<span class=emp-logo-txt>FedEx</span>'">
+
+              <!-- DHL -->
+              <div class="erc-card" onclick="toggleErc(this)">
+                <div class="erc-front">
+                  <div class="erc-front-top">
+                    <div class="erc-logo" style="background:#FFCC00"><img src="DHL.png" alt="DHL"></div>
+                    <div class="erc-tag" style="--tc:#FFCC00">GoGreen</div>
+                  </div>
+                  <h4 class="erc-name">DHL</h4>
+                  <p class="erc-hook">El operador logístico más grande del mundo apostó por biocombustibles de aviación y electrificación urbana.</p>
+                  <div class="erc-stats">
+                    <div class="erc-stat"><span class="erc-num">-80%</span><span class="erc-lbl">emisiones con SAF</span></div>
+                    <div class="erc-stat"><span class="erc-num">$7B</span><span class="erc-lbl">inversión verde</span></div>
+                  </div>
+                  <div class="erc-cta">Ver soluciones <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div>
                 </div>
-                <h4>FedEx</h4>
-                <p>Comprometida con operaciones carbono-neutras para 2040 con inversión de $2B en vehículos EV.</p>
-                <span class="emp-badge">Carbono neutro</span>
-              </div>
-              <div class="emp-card fade-in fade-in-d1">
-                <div class="emp-logo" style="background:#fff"><img src="ups.png" alt="UPS"
-                    onerror="this.parentElement.style.background='linear-gradient(135deg,#0070ba,#00a3e0)';this.outerHTML='<span class=emp-logo-txt>UPS</span>'">
+                <div class="erc-body">
+                  <div class="erc-sol-list">
+                    <div class="erc-sol">
+                      <div class="erc-sol-num">01</div>
+                      <div>
+                        <strong>Combustible de aviación sostenible</strong>
+                        <p>Introdujo SAF en su flota de carga aérea. Cada vuelo con este combustible reduce las emisiones hasta un 80% comparado con queroseno convencional.</p>
+                      </div>
+                    </div>
+                    <div class="erc-sol">
+                      <div class="erc-sol-num">02</div>
+                      <div>
+                        <strong>7,000 vehículos eléctricos en Europa</strong>
+                        <p>Electrificó su reparto urbano de última milla en las principales ciudades europeas e instaló sus propias estaciones de carga para no depender de terceros.</p>
+                      </div>
+                    </div>
+                    <div class="erc-sol">
+                      <div class="erc-sol-num">03</div>
+                      <div>
+                        <strong>GoGreen Plus: reducción verificada, no compensada</strong>
+                        <p>Ofrece a sus clientes corporativos reducción real de emisiones con trazabilidad por kilogramo de combustible sostenible utilizado en cada envío.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="erc-close">Cerrar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></div>
                 </div>
-                <h4>UPS</h4>
-                <p>Uso de gas natural renovable y rutas optimizadas por IA para reducir millones de km anuales.</p>
-                <span class="emp-badge">Rutas IA</span>
               </div>
+
+              <!-- FEDEX -->
+              <div class="erc-card" onclick="toggleErc(this)">
+                <div class="erc-front">
+                  <div class="erc-front-top">
+                    <div class="erc-logo" style="background:#4d148c"><img src="FedEx.png" alt="FedEx"></div>
+                    <div class="erc-tag" style="--tc:#ff6600">Carbono Neutro</div>
+                  </div>
+                  <h4 class="erc-name">FedEx</h4>
+                  <p class="erc-hook">Dos mil millones de dólares destinados a un solo objetivo: operaciones carbono neutras para 2040.</p>
+                  <div class="erc-stats">
+                    <div class="erc-stat"><span class="erc-num">$2B</span><span class="erc-lbl">inversión declarada</span></div>
+                    <div class="erc-stat"><span class="erc-num">28</span><span class="erc-lbl">instalaciones solares</span></div>
+                  </div>
+                  <div class="erc-cta">Ver soluciones <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div>
+                </div>
+                <div class="erc-body">
+                  <div class="erc-sol-list">
+                    <div class="erc-sol">
+                      <div class="erc-sol-num">01</div>
+                      <div>
+                        <strong>Electrificación progresiva de flota</strong>
+                        <p>Adquirió camiones eléctricos BrightDrop y Zevo 600 para el reparto urbano. Va reemplazando su flota de forma sistemática priorizando las rutas de mayor volumen.</p>
+                      </div>
+                    </div>
+                    <div class="erc-sol">
+                      <div class="erc-sol-num">02</div>
+                      <div>
+                        <strong>Hubs solares con certificación LEED</strong>
+                        <p>Instaló paneles solares en 28 instalaciones en tres continentes. Sus principales centros en Memphis y Colonia operan con certificación LEED nivel Oro.</p>
+                      </div>
+                    </div>
+                    <div class="erc-sol">
+                      <div class="erc-sol-num">03</div>
+                      <div>
+                        <strong>Project ROAR: rutas con IA</strong>
+                        <p>Su proyecto de optimización elimina 1.7 millones de kilómetros mensuales al evitar giros innecesarios. El ahorro equivale a 900,000 litros de combustible al año.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="erc-close">Cerrar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></div>
+                </div>
+              </div>
+
+              <!-- UPS -->
+              <div class="erc-card" onclick="toggleErc(this)">
+                <div class="erc-front">
+                  <div class="erc-front-top">
+                    <div class="erc-logo" style="background:#351c15"><img src="UPS.png" alt="UPS"></div>
+                    <div class="erc-tag" style="--tc:#FFB500">IA + Hidrógeno</div>
+                  </div>
+                  <h4 class="erc-name">UPS</h4>
+                  <p class="erc-hook">La flota alternativa más diversa del sector: eléctrica, de hidrógeno, gas renovable y bicicletas de carga.</p>
+                  <div class="erc-stats">
+                    <div class="erc-stat"><span class="erc-num">100M+</span><span class="erc-lbl">millas ahorradas al año</span></div>
+                    <div class="erc-stat"><span class="erc-num">-90%</span><span class="erc-lbl">CO₂ con gas renovable</span></div>
+                  </div>
+                  <div class="erc-cta">Ver soluciones <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></div>
+                </div>
+                <div class="erc-body">
+                  <div class="erc-sol-list">
+                    <div class="erc-sol">
+                      <div class="erc-sol-num">01</div>
+                      <div>
+                        <strong>ORION: sistema de rutas con IA</strong>
+                        <p>Su algoritmo de optimización lleva años eliminando millones de millas al evitar giros a la izquierda y reorganizar secuencias de entrega de forma inteligente.</p>
+                      </div>
+                    </div>
+                    <div class="erc-sol">
+                      <div class="erc-sol-num">02</div>
+                      <div>
+                        <strong>Gas Natural Renovable en larga distancia</strong>
+                        <p>Acuerdo con bp para abastecer su flota pesada de camiones con GNR. Reduce las emisiones de CO₂ hasta un 90% frente al diésel en rutas interurbanas.</p>
+                      </div>
+                    </div>
+                    <div class="erc-sol">
+                      <div class="erc-sol-num">03</div>
+                      <div>
+                        <strong>Cargo bikes en más de 30 ciudades</strong>
+                        <p>Desplegó bicicletas de carga y triciclos eléctricos en zonas urbanas densas de Europa y América. En esas rutas ya no circula ningún camión de reparto.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="erc-close">Cerrar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></div>
+                </div>
+              </div>
+
             </div>
-
-
-          <!-- CONCEPTOS CLAVE -->
-          <h3 class="exp-section-title fade-in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" style="width:16px;height:16px;flex-shrink:0">
-              <rect x="3" y="3" width="18" height="18" rx="2" />
-              <path d="M9 9h6M9 12h6M9 15h4" />
-            </svg>Conceptos clave</h3>
-
-          <div class="ck-layout fade-in">
-
-            <!-- Tarjeta destacada principal -->
-            <div class="ck-featured">
-              <div class="ck-feat-tag">Concepto esencial</div>
-              <div class="ck-feat-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg>
-              </div>
-              <h2 class="ck-feat-title">Huella de carbono logística</h2>
-              <p class="ck-feat-body">La medida total de gases de efecto invernadero (GEI) generados por las actividades de transporte, almacenamiento y distribución de una empresa. Se expresa en <strong>toneladas de CO₂ equivalente (tCO₂e)</strong> y es el punto de partida para cualquier estrategia verde.</p>
-              <div class="ck-feat-stat">
-                <span class="ck-stat-num">tCO₂e</span>
-                <span class="ck-stat-lbl">Unidad de medida universal</span>
-              </div>
-            </div>
-
-            <!-- Columna derecha: pila de tarjetas compactas -->
-            <div class="ck-stack">
-
-              <div class="ck-item ck-item--accent">
-                <div class="ck-item-head">
-                  <span class="ck-index">02</span>
-                  <svg class="ck-item-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
-                </div>
-                <h4>Cadena de suministro sostenible</h4>
-                <p>Red de organizaciones e información que integra criterios sociales y ambientales junto con los económicos, del proveedor al consumidor final.</p>
-              </div>
-
-              <div class="ck-item">
-                <div class="ck-item-head">
-                  <span class="ck-index">03</span>
-                  <svg class="ck-item-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
-                </div>
-                <h4>Logística inversa</h4>
-                <p>El flujo de productos de vuelta al origen: recuperar valor, reutilizar materiales y asegurar la correcta disposición de residuos.</p>
-              </div>
-
-              <div class="ck-item">
-                <div class="ck-item-head">
-                  <span class="ck-index">04</span>
-                  <svg class="ck-item-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-                </div>
-                <h4>Last Mile Verde</h4>
-                <p>La "última milla" sostenible: vehículos eléctricos, bicicletas de carga y puntos de recogida compartidos para el tramo final de entrega.</p>
-              </div>
-
-            </div>
-
-            <!-- Fila inferior: dos tarjetas horizontales -->
-            <div class="ck-row">
-
-              <div class="ck-wide">
-                <div class="ck-wide-num">05</div>
-                <div class="ck-wide-body">
-                  <h4>Almacén verde <span class="ck-en">Green Warehouse</span></h4>
-                  <p>Centro de distribución diseñado para minimizar su impacto: paneles solares, iluminación LED, reciclaje de agua y certificaciones <strong>LEED</strong> o <strong>BREEAM</strong>.</p>
-                </div>
-                <div class="ck-wide-visual">
-                  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-                    <rect x="6" y="20" width="36" height="22" rx="2"/>
-                    <path d="M2 22L24 6l22 16"/>
-                    <line x1="16" y1="42" x2="16" y2="30"/>
-                    <line x1="32" y1="42" x2="32" y2="30"/>
-                    <line x1="16" y1="30" x2="32" y2="30"/>
-                    <path d="M10 14l4-6 4 6" stroke-linecap="round"/>
-                    <circle cx="38" cy="12" r="4"/>
-                    <line x1="38" y1="8" x2="38" y2="6"/>
-                    <line x1="38" y1="16" x2="38" y2="18"/>
-                    <line x1="34" y1="12" x2="32" y2="12"/>
-                    <line x1="42" y1="12" x2="44" y2="12"/>
-                  </svg>
-                </div>
-              </div>
-
-              <div class="ck-wide ck-wide--green">
-                <div class="ck-wide-num">06</div>
-                <div class="ck-wide-body">
-                  <h4>Transporte multimodal sostenible</h4>
-                  <p>Combinar ferroviario, marítimo, aéreo y carretera optimizando cada tramo para <strong>minimizar emisiones totales</strong> según tipo de carga y distancia.</p>
-                </div>
-                <div class="ck-wide-visual">
-                  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4">
-                    <path d="M4 36h40"/>
-                    <rect x="4" y="26" width="14" height="10" rx="2"/>
-                    <circle cx="9" cy="38" r="2.5"/>
-                    <circle cx="16" cy="38" r="2.5"/>
-                    <path d="M20 36V20l8-6 8 6v16"/>
-                    <rect x="24" y="26" width="8" height="10"/>
-                    <path d="M38 24l-4-8h-8l-4 8"/>
-                    <circle cx="8" cy="20" r="3"/>
-                    <path d="M8 17V10M5 13l3-3 3 3" stroke-linecap="round"/>
-                  </svg>
-                </div>
-              </div>
-
-            </div>
-
           </div>
+
+
 
           <!-- PRINCIPIOS FUNDAMENTALES -->
                   <!-- PRINCIPIOS FUNDAMENTALES -->
@@ -1041,6 +1181,42 @@
                 <a href="https://youtu.be/d1-nQWdWosI" class="rlink" target="_blank">Ver video <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
               </div>
             </div>
+            <div class="vid-card fade-in fade-in-d1">
+              <a href="https://youtu.be/qBuOlqXXTzM" target="_blank" class="vid-thumb vid-thumb-link">
+                <span class="vid-badge">YouTube</span>
+                <img src="https://img.youtube.com/vi/qBuOlqXXTzM/hqdefault.jpg" alt="Video 4 thumbnail">
+                <div class="vid-play"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3" fill="white"/></svg></div>
+              </a>
+              <div class="vid-body">
+                <h3>Logística Verde</h3>
+                <p>Estrategias y buenas prácticas para una cadena de suministro más sostenible.</p>
+                <a href="https://youtu.be/qBuOlqXXTzM" class="rlink" target="_blank">Ver video <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
+              </div>
+            </div>
+            <div class="vid-card fade-in fade-in-d2">
+              <a href="https://youtu.be/_eZRbZXGesU" target="_blank" class="vid-thumb vid-thumb-link">
+                <span class="vid-badge">YouTube</span>
+                <img src="https://img.youtube.com/vi/_eZRbZXGesU/hqdefault.jpg" alt="Video 5 thumbnail">
+                <div class="vid-play"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3" fill="white"/></svg></div>
+              </a>
+              <div class="vid-body">
+                <h3>Sostenibilidad en la Logística</h3>
+                <p>Innovación y tecnología al servicio de una logística más limpia y eficiente.</p>
+                <a href="https://youtu.be/_eZRbZXGesU" class="rlink" target="_blank">Ver video <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
+              </div>
+            </div>
+            <div class="vid-card fade-in fade-in-d3">
+              <a href="https://youtu.be/5wh-8dqGT3I" target="_blank" class="vid-thumb vid-thumb-link">
+                <span class="vid-badge">YouTube</span>
+                <img src="https://img.youtube.com/vi/5wh-8dqGT3I/hqdefault.jpg" alt="Video 6 thumbnail">
+                <div class="vid-play"><svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3" fill="white"/></svg></div>
+              </a>
+              <div class="vid-body">
+                <h3>Transporte Sostenible</h3>
+                <p>El futuro del transporte de carga y su impacto en la reducción de emisiones.</p>
+                <a href="https://youtu.be/5wh-8dqGT3I" class="rlink" target="_blank">Ver video <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg></a>
+              </div>
+            </div>
           </div>
 
           <!-- PÁGINAS WEB -->
@@ -1153,46 +1329,43 @@
         <div class="sn-layout">
           <!-- Columna izquierda: ¿Por qué Green Kenji? + ¿Para quién? -->
           <div class="fade-in">
-            <!-- Bloque: ¿Por qué Green Kenji? -->
+            <!-- Bloque: Objetivo -->
             <div class="sn-porque">
               <div class="sec-lbl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <circle cx="12" cy="12" r="10" />
                   <circle cx="12" cy="12" r="6" />
                   <circle cx="12" cy="12" r="2" fill="currentColor" />
-                </svg>Nuestra misión</div>
-              <h2 class="sec-title">¿Por qué<br>Green Kenji?</h2>
-              <p class="sec-sub" style="margin-bottom:10px;">Pretendemos generar un cambio profundo en la mentalidad del
-                sector logístico, ayudando a entender que la sostenibilidad debe ser eje central en todas las decisiones
-                estratégicas.</p>
+                </svg>Green Kenji</div>
+              <h2 class="sec-title">Objetivo</h2>
+              <p class="sec-sub" style="margin-bottom:10px;">Crear conciencia ambiental sobre el impacto que tienen las operaciones logísticas tradicionales en el medioambiente y la urgente necesidad de adoptar prácticas sostenibles en el sector.</p>
               <div class="sn-porque-cards">
-                <div class="mc">
+                <div class="mc mc--accent" data-n="01">
                   <div class="mc-ico"><svg viewBox="0 0 24 24" stroke-width="2">
-                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                     </svg></div>
-                  <h4>Sostenibilidad real</h4>
-                  <p>Acción concreta sobre el medioambiente desde la logística.</p>
+                  <h4>Conciencia ambiental</h4>
+                  <p>Visibilizar el impacto real de la logística tradicional en el medioambiente.</p>
                 </div>
-                <div class="mc">
+                <div class="mc" data-n="02">
+                  <div class="mc-ico"><svg viewBox="0 0 24 24" stroke-width="2">
+                      <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg></div>
+                  <h4>Decisiones diarias</h4>
+                  <p>Sensibilizar sobre cómo las operaciones logísticas afectan el clima, el agua y la biodiversidad.</p>
+                </div>
+                <div class="mc" data-n="03">
                   <div class="mc-ico"><svg viewBox="0 0 24 24" stroke-width="2">
                       <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
                     </svg></div>
-                  <h4>Datos que importan</h4>
-                  <p>Estadísticas y evidencia para tomar mejores decisiones.</p>
+                  <h4>Cambio de mentalidad</h4>
+                  <p>Impulsar que la sostenibilidad sea eje central, no un tema secundario, en el sector.</p>
                 </div>
-                <div class="mc">
-                  <div class="mc-ico"><svg viewBox="0 0 24 24" stroke-width="2">
-                      <path
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg></div>
-                  <h4>Conciencia ambiental</h4>
-                  <p>Sensibilizar sobre las decisiones diarias y su impacto real.</p>
-                </div>
-                <div class="mc">
+                <div class="mc" data-n="04">
                   <div class="mc-ico"><svg viewBox="0 0 24 24" stroke-width="2">
                       <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
                     </svg></div>
-                  <h4>Educación activa</h4>
-                  <p>Formación práctica para los futuros líderes del sector.</p>
+                  <h4>Prácticas sostenibles</h4>
+                  <p>Fomentar la adopción de logística verde en las decisiones estratégicas y operativas.</p>
                 </div>
               </div>
             </div>
@@ -1312,6 +1485,15 @@
 
   <script src="script.js"></script>
   <script>
+// ── Empresa reveal cards ──
+function toggleErc(card) {
+  const isOpen = card.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.erc-card.open').forEach(c => c.classList.remove('open'));
+  // Open this one if it wasn't already open
+  if (!isOpen) card.classList.add('open');
+}
+
 // ── Avatar photo loader ──
 (function loadAvatarPhotos() {
   const avatars = document.querySelectorAll(".ig-avatar[data-photo]");
