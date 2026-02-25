@@ -54,7 +54,7 @@ const SPLIT_IDX = 4; // índice de 2026 en los labels
 const chartMeta = {
   co2: {
     title: '¿Cuánto contamina el transporte en Panamá?',
-    sub: 'La línea gris muestra lo que pasó de verdad. Desde 2026: qué pasa si no hacemos nada (rojo) vs. si adoptamos logística verde (verde).',
+    sub: 'La línea gris muestra lo que pasó de verdad. Desde 2026: qué pasa si no hacemos nada vs si adoptamos logística verde.',
     legendBad: 'Sin cambios',
     legendGood: 'Con logística verde',
     showReal: true,
@@ -74,8 +74,8 @@ const chartMeta = {
   },
   energia: {
     title: '¿De dónde viene la energía que usa la logística en Panamá?',
-    sub: 'Cómo se genera la energía hoy (2026) y cómo podría cambiar para 2030 si el sector adopta fuentes renovables.',
-    legendBad: 'Cómo está hoy (2026)',
+    sub: 'Cómo se genera la energía hoy y cómo podría cambiar para 2030 si el sector adopta fuentes renovables.',
+    legendBad: 'Cómo está hoy',
     legendGood: 'Cómo podría estar en 2030',
     showReal: false,
     ctxPeriod: null,
